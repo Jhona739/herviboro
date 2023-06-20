@@ -1,0 +1,37 @@
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    width: 100%;
+    padding: 20px;
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav__lista{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.lista__item{
+    display: inline-block;
+}
+.item__enlace{
+    display: block;
+    color: #fff;
+    opacity: 0.5;
+    font-size: 1.2rem;
+    padding: 20px;
+    font-weight: bold;
+}
+.item__enlace:hover{
+    opacity: 1;
+}
+.item__enlace.active{
+    opacity: 1;
+    color: rgb(126, 255, 126);
+    border-bottom: 1px solid rgb(126, 255, 126);
+}

@@ -1,0 +1,96 @@
+@import url("header.css");
+@import url("estilosbases.css");
+@import url("animaciones.css");
+
+.content-productos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    background-image: url("../img/fondoprincipal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    width: 100%;
+    background-color: black;
+}
+.card__container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    animation-name: rotar;
+    animation-duration: 3s;
+}
+.card__imagen, .card__descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 20px;
+}
+.card__imagen img{
+   width: 100%;
+   height: 100%;
+   transition: .3s ease all;
+   filter: saturate(0.6);
+}
+.card__imagen img:hover{
+    filter: saturate(1);
+    transform: scale(1.1);
+    transition: .3s ease all;
+ }
+.card__descripcion{
+    color: #fff;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card__descripcion h2{
+   font-size: 3rem;
+}
+.precio h1{
+    font-size: 1rem;
+    width: 100%;
+}
+.precio button{
+    background-color: green;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.precio button:hover{
+    color: #000;
+    background-color: #fff;
+}
+@media(max-width: 800px){
+    html{
+        font-size: 12px;
+    }
+    .card{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .lista__item{
+        width: 100%;
+    }
+}
+@media(max-width: 400px){
+    html{
+        font-size: 12px;
+    }
+    .card{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .lista__item{
+        width: 100%;
+    }
+    .card__descripcion h2{
+        font-size: 1.2rem;
+     }
+}

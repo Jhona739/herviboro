@@ -1,0 +1,46 @@
+@import url("header.css");
+@import url("estilosbases.css");
+@import url("animaciones.css");
+
+.content-mapa{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../img/fondoprincipal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    width: 100%;
+    height: 750px;
+    animation-name: aparecer;
+    animation-duration: 3s;
+}
+.mapa__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+}
+.mapa__container img{
+    width: 100%;
+    height: 100%;
+}
+@media(max-width: 800px){
+    html{
+        font-size: 12px;
+    }
+    .lista__item{
+        width: 100%;
+    }
+}
+@media(max-width: 400px){
+    html{
+        font-size: 12px;
+    }
+    .lista__item{
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/pedir.css">
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+        <title>Herviboro</title>
+    </head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+             <div class="header__logo">
+                 <img src="img/logo.png" alt="logo-herviboro">
+             </div>
+             <nav class="nav">
+                 <ul class="nav__lista">
+                    <li class="lista__item"><a class="item__enlace" href="index.html">INICIO</a></li>
+                    <li class="lista__item"><a class="item__enlace active" href="pedir.html">PEDIR</a></li>
+                    <li class="lista__item"><a class="item__enlace" href="ubicaciones.html">UBICACIONES</a></li>
+                    <li class="lista__item"><a class="item__enlace" href="nosotros.html">NOSOTROS</a></li>
+                 </ul>
+             </nav> 
+        </header>
+        <div class="content-productos">
+            <div class="card">
+                <div class="card__container">
+                    <div class="card__imagen">
+                        <img src="img/seitan.jpeg" alt="seitan-herviboro">
+                    </div>
+                    <div class="card__descripcion">
+                        <div class="descripcion__container">
+                            <h2>Seitán y brócoli agridulce</h2>
+                            <p>Seitán, brócoli, salsa agridulce y ajonjolí.</p>
+                        </div>
+                        <div class="precio">
+                            <h2>$17.600</h2>
+                            <button name="agregar" onclick="muestraOpcion()">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <div class="card__imagen">
+                        <img src="img/sopa putanezca.jpeg" alt="sopa-putanezca">
+                    </div>
+                    <div class="card__descripcion">
+                        <div class="descripcion__container">
+                            <h2>Sopa putanesca</h2>
+                            <p>Sopa de frijol blanco, aceitunas, alcaparras,</p>
+                        </div>
+                        <div class="precio">
+                            <h2>$15.400</h2>
+                            <button name="agregar" onclick="muestraOpcion()">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <div class="card__imagen">
+                        <img src="img/zuniqui.jpeg" alt="zuniqui-herviboro">
+                    </div>
+                    <div class="card__descripcion">
+                        <div class="descripcion__container">
+                            <h2>Zuquini y garbanzos al romero</h2>
+                            <p>Zuquini, tomate, papas y garbanzos al romero</p>
+                        </div>
+                        <div class="precio">
+                            <h2>$14.300</h2>
+                            <button name="agregar" onclick="muestraOpcion()">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <div class="card__imagen">
+                        <img src="img/india.jpeg" alt="india-herviboro">
+                    </div>
+                    <div class="card__descripcion">
+                        <div class="descripcion__container">
+                            <h2>Sopa india</h2>
+                            <p>Sopa de garbanzos, masala, papa y verduras.</p>
+                        </div>
+                        <div class="precio">
+                            <h2>$20.000</h2>
+                            <button name="agregar" onclick="muestraOpcion()">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <div class="card__imagen">
+                        <img src="img/arroz.jpeg" alt="arroz-herviboro">
+                    </div>
+                    <div class="card__descripcion">
+                        <div class="descripcion__container">
+                            <h2>Arroz criollo</h2>
+                            <p>Arroz integral, seitán desmechado, tomate.</p>
+                        </div>
+                        <div class="precio">
+                            <h2>$15.400</h2>
+                            <button name="agregar" onclick="muestraOpcion()">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <div class="card__imagen">
+                        <img src="img/helados.png" alt="helados-herviboro">
+                    </div>
+                    <div class="card__descripcion">
+                        <div class="descripcion__container">
+                            <h2>Helado X 800 Mililitros</h2>
+                            <p>Nuestro delicioso helado vegano, escoge 1 sabor.</p>
+                        </div>
+                        <div class="precio">
+                            <h2>$20.000</h2>
+                            <button name="agregar" onclick="muestraOpcion()">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <div class="card__imagen">
+                        <img src="img/pizza.webp" alt="sopa-herviboro">
+                    </div>
+                    <div class="card__descripcion">
+                        <div class="descripcion__container">
+                            <h2>Pizza Silvestre</h2>
+                            <p>Pizza de masa madurada, queso vegano, base blanca, rugula orellanas y crema de pimienta.</p>
+                        </div>
+                        <div class="precio">
+                            <h2>$15.000</h2>
+                            <button name="agregar" onclick="muestraOpcion()">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <div class="card__imagen">
+                        <img src="img/kung pao.webp" alt="sopa-herviboro">
+                    </div>
+                    <div class="card__descripcion">
+                        <div class="descripcion__container">
+                            <h2>Vegetales y Seitan Kung Pao</h2>
+                            <p>Delicioso bowl de vegetales salteados, piña, seitan y maní en salsa agridulce acompañada de arroz integral.</p>
+                        </div>
+                        <div class="precio">
+                            <h2>$25.200</h2>
+                            <button name="agregar" onclick="muestraOpcion()">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <div class="card__imagen">
+                        <img src="img/tortillas.webp" alt="sopa-herviboro">
+                    </div>
+                    <div class="card__descripcion">
+                        <div class="descripcion__container">
+                            <h2>Sopa de Tortillas y Chiplote</h2>
+                            <p>Frijol negro, maíz, pico de gallo, tootpos y aguacate en caldo de chipotle.</p>
+                        </div>
+                        <div class="precio">
+                            <h2>$22.000</h2>
+                            <button name="agregar" onclick="muestraOpcion()">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <div class="card__imagen">
+                        <img src="img/algas.webp" alt="sopa-herviboro">
+                    </div>
+                    <div class="card__descripcion">
+                        <div class="descripcion__container">
+                            <h2>Ensalada de Algas</h2>
+                            <p>Ensala de algas marinas, orellanas y mix de verdes aderezado con crema de pimienta.</p>
+                        </div>
+                        <div class="precio">
+                            <h2>$24.900</h2>
+                            <button name="agregar" onclick="muestraOpcion()">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <div class="card__imagen">
+                        <img src="img/chips.webp" alt="sopa-herviboro">
+                    </div>
+                    <div class="card__descripcion">
+                        <div class="descripcion__container">
+                            <h2>Chips de papa criolla</h2>
+                            <p>Porcion de chips de papa criolla.</p>
+                        </div>
+                        <div class="precio">
+                            <h2>$7.800</h2>
+                            <button name="agregar" onclick="muestraOpcion()">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <div class="card__imagen">
+                        <img src="img/cono.webp" alt="sopa-herviboro">
+                    </div>
+                    <div class="card__descripcion">
+                        <div class="descripcion__container">
+                            <h2>Cono Galleta X 10</h2>
+                            <p>Galletitas para que armes tu helado en casa x unidad.</p>
+                        </div>
+                        <div class="precio">
+                            <h2>$7.900</h2>
+                            <button name="agregar" onclick="muestraOpcion()">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
